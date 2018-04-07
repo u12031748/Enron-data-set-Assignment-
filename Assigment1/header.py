@@ -1,4 +1,4 @@
-class header
+class Header:
     Message_ID = ""
     Date = ""
     From = ""
@@ -6,7 +6,7 @@ class header
     Subject = ""
     Mime = ""
     Content_Type = ""
-    Content_Transfer - Encoding = ""
+    Content_Transfer_Encoding = ""
     X_From = ""
     X_To = ""
     X_cc = ""

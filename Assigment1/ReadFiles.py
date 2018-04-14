@@ -2,8 +2,8 @@ import os
 from shutil import copyfile
 
 # The top argument for name in files
-topdir = 'C:\\Users\\Khumalo\\Desktop\\School 2018\\COS720\\Enron\\maildir'
-dest = 'C:\\Users\\Khumalo\\Desktop\\Enron emails'
+topdir = 'C:\\Users\\i\\Google Drive\\Honours\\COS720\\Assignment\\maildir\\'
+dest = 'C:\\Users\\i\\Desktop\\Enron emails'
 
 extens = ['txt', 'pdf', 'doc']  # the extensions to search for
 

@@ -3,8 +3,8 @@ import sys
 import re
 
 #rootdir = sys.argv[1]
-rootdir = 'C:\\Users\\Khumalo\\Desktop\\School 2018\\COS720\\Enron\\maildir'
-file = open('C:\\Users\\Khumalo\\Desktop\\Enron emails\\testfile.txt','w')
+rootdir = 'C:\\Users\\i\\Google Drive\\Honours\\COS720\\Assignment\\maildir\\'
+file = open('C:\\Users\\i\\Desktop\\Enron emails.txt','w')
 for folder, subs, files in os.walk(rootdir):
     #with open(os.path.join(folder, 'python-outfile.txt'), 'w') as dest:
         for filename in files:

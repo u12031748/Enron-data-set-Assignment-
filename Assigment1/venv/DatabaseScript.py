@@ -74,6 +74,7 @@ for line in file:
     if myGlobal == 1:
         cursor.execute("INSERT INTO Emails " "([Message-ID]) " "VALUES ("+s+")");
         connection.commit();
+        id = cursor.fetchone()[0]
     if myGlobal == 2:
         #cursor.execute("INSERT INTO Emails " "([Message-ID]) " "VALUES ("+s+")");
         cursor.execute("UPDATE Emails SET Date: = ? WHERE [Message-ID] = ?", newcockpitdrillvalue, oldprimarykeyvalue)

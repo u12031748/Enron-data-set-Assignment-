@@ -15,7 +15,7 @@ for line in file:
         s = line.replace("Message-ID:", "")
         print(s)
     if re.match("(.*)Date:(.*)", line):
-        s = line.replace("Message-ID:", "")
+        s = line.replace("Date:", "")
         print(s)
     if re.match("(.*)From:(.*)", line):
         s = line.replace("From:", "")
@@ -23,16 +23,40 @@ for line in file:
     if re.match("(.*)To:(.*)", line):
         s = line.replace("To:", "")
         print(s)
-    if re.match("(.*)Message-ID:(.*)", line):
-        s = line.replace("Message-ID:", "")
+    if re.match("(.*)Subject:(.*)", line):
+        s = line.replace("Subject:", "")
         print(s)
-    if re.match("(.*)Message-ID:(.*)", line):
-        s = line.replace("Message-ID:", "")
+    if re.match("(.*)Mime-Version:(.*)", line):
+        s = line.replace("Mime-Version:", "")
+        print(s)
+    if re.match("(.*)Content-Type:(.*)", line):
+        s = line.replace("Content-Type:", "")
+        print(s)
+    if re.match("(.*)Content-Transfer-Encoding:(.*)", line):
+        s = line.replace("Content-Transfer-Encoding:", "")
+        print(s)
+    if re.match("(.*)X-From:(.*)", line):
+        s = line.replace("X-From:", "")
+        print(s)
+    if re.match("(.*)X-To::(.*)", line):
+        s = line.replace("X-To:", "")
+        print(s)
+    if re.match("(.*)X-cc:(.*)", line):
+        s = line.replace("X-cc:", "")
+    if re.match("(.*)X-bcc:(.*)", line):
+        s = line.replace("X-bcc:", "")
+        print(s)
+    if re.match("(.*)X-Folder::(.*)", line):
+        s = line.replace("X-Folder:", "")
+        print(s)
+    if re.match("(.*)X-Origin:(.*)", line):
+        s = line.replace("X-Origin:", "")
         print(s)
     if re.match("(.*)(X|x)-FileName:(.*)", line):
-            print("\n")
-            print("\n")
-            break
+        s = line.replace("X-FileName:", "")
+        print(s)
+        print("\n")
+
 #cursor.execute('SELECT * FROM Tbl_Emails')
 
 #for row in cursor:

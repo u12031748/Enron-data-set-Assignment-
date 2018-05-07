@@ -1,6 +1,6 @@
 import pyodbc
 cnxn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
-                      "Server=DESKTOP-TJ11VHB;"
+                      "Server=DESKTOP-FGO9KMF;"
                       "Database=Emails;"
                       "Trusted_Connection=yes;")
 

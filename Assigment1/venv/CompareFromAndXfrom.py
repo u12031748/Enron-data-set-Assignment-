@@ -49,5 +49,16 @@ for i in From:
 
     indexX = indexX+1
 
-print(SuspeciousEmail)
-print(goodEmail)
+#print(SuspeciousEmail)
+#print(goodEmail)
+labels = 'Legit Emails','Spoofed Emails'
+sizes = [goodEmail,SuspeciousEmail]
+colors = ['green', 'red']
+explode = (0.2, 0.2)
+
+# Plot
+plt.pie(sizes, explode=explode, labels=labels, colors=colors,
+        autopct='%1.1f%%', shadow=True, startangle=140)
+
+plt.axis('equal')
+plt.show()

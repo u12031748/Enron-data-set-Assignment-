@@ -26,8 +26,8 @@ for i in cursor.fetchall():
 
 
 y, x  = (list(t) for t in zip(*sorted(zip(y, x), reverse=True)))
-print(x[:10])
-print(y[:10])
+print(x[:20])
+print(y[:20])
 
 #output chart
 # naming the x-axis
